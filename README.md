@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Rishi Singh</h1>
 <h3 align="center">A passionate Web and Android developer from India</h3>
 
-<img src = "https://cdn.dribbble.com/users/1708816/screenshots/15637256/media/f9826f0af8a49462f048262a8502035b.gif" align="center" alt = "image" width = "600">
+<img src = "https://cdn.dribbble.com/users/1708816/screenshots/15637256/media/f9826f0af8a49462f048262a8502035b.gif" alt = "image" width = "600">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mrsingh-rishi&label=Profile%20views&color=0e75b6&style=flat" alt="mrsingh-rishi" /> </p>
 
