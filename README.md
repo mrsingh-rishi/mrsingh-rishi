@@ -9,13 +9,13 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🌱 I’m currently learning **React.js and Node.js**
+- 🌱 I’m currently learning **WebRTC, Advance Backend and Advance Devops**
 
 - 👨‍💻 All of my projects are available at [https://rishisingh-portfolio.netlify.app/](https://rishisingh-portfolio.netlify.app/)
 
 - 📫 How to reach me **rs3949427@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1Q_e2CSeblzu11gV2kdcAr3pDeLA4ZVX4/view?usp=drive_link](https://drive.google.com/file/d/1Q_e2CSeblzu11gV2kdcAr3pDeLA4ZVX4/view?usp=drive_link)
+- 📄 Know about my experiences [Resume](https://drive.google.com/file/d/1837oezUk6Uz1rCsElKmn0oMUFGJovvx4/view?usp=drive_link)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
