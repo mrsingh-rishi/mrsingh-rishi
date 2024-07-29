@@ -1,5 +1,24 @@
 # 💫 About Me:
-👋 Hi, I'm Rishi Singh!<br><br>MERN Stack Developer: Proficient in MongoDB, Express.js, React.js, and Node.js.<br>Backend Development: Experienced in creating robust server-side applications.<br>Frontend Development: Skilled in building dynamic and responsive web interfaces.<br>Full-Stack Development: Capable of handling both front and back-end tasks seamlessly.<br>Mobile Development: Developing cross-platform apps using Flutter.<br>Spring Boot: Expertise in creating scalable Java-based applications.<br>Passionate about turning ideas into reality through code. Check out my projects to see what I've been working on!
+👋 Hi, I'm Rishi Singh!
+
+*"My code doesn’t work; I’m just not very good at this game yet."*
+
+💻🔧 Software Engineer 🔧💻
+
+Over 1 year of experience
+
+- **MERN Stack Developer:** Proficient in MongoDB, Express.js, React.js, and Node.js.
+- **Backend Development:** Experienced in creating robust server-side applications.
+- **Frontend Development:** Skilled in building dynamic and responsive web interfaces.
+- **Full-Stack Development:** Capable of handling both front and back-end tasks seamlessly.
+- **Mobile Development:** Developing cross-platform apps using Flutter.
+- **Spring Boot:** Expertise in creating scalable Java-based applications.
+
+Passionate about turning ideas into reality through code. Check out my projects to see what I've been working on!
+
+
+
+
 
 
 ## 🌐 Socials:
