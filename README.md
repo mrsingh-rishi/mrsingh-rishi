@@ -28,9 +28,9 @@
   <a href="https://instagram.com/rishi_singh12_02">
     <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white" alt="Instagram">
   </a>
-  <a href="https://linkedin.com/in/rishi-singh-332a481a4">
+<!--   <a href="https://linkedin.com/in/rishi-singh-332a481a4">
     <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
+  </a> -->
   <a href="https://x.com/RishiSi55851086">
     <img src="https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white" alt="X">
   </a>
