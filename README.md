@@ -7,7 +7,7 @@
 
 <h2>💻🔧 Software Engineer 🔧💻</h2>
 
-<p>Over 1 year of experience</p>
+<p>Over 2 year of experience</p>
 
 <div style="display: inline-block; text-align: left;">
   <ul style="list-style: none; padding: 0;">
