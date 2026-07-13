@@ -14,12 +14,17 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "info-card.svg")
 STATIC = bool(os.environ.get("STATIC"))
 
-W, H = 480, 600
+W, H = 480, 378
 PAD = 20
 TITLEBAR_H = 30
 KEY_X = PAD
 VAL_X = PAD + 92
-LINE_H = 20.5
+LINE_H = 16
+
+FONT_HOST = 11
+FONT_KV = 9.6
+FONT_SEC = 9.6
+FONT_BUL = 9.2
 
 BG = "#0d1117"
 BG2 = "#111722"
@@ -52,19 +57,13 @@ ROWS = [
     ("kv", "Prev", "Software Engineer @ AST Consulting"),
     ("gap",),
     ("sec", "dBee -- CTO"),
-    ("bul", "Real-time Voice AI: LLMs, STT, TTS, telephony"),
-    ("bul", "Multi-agent arch, persistent memory, RAG pipelines"),
-    ("bul", "Eval frameworks from real call outcomes, on K8s/KEDA"),
+    ("bul", "Real-time Voice AI (LLM/STT/TTS), multi-agent RAG pipelines, K8s/KEDA scale"),
     ("gap",),
     ("sec", "Oriserve.ai -- Backend"),
-    ("bul", "450K+ daily calls, sub-1200ms latency, 99.99% up"),
-    ("bul", "Cut latency ~3.5s to <1.2s, async + multithreaded"),
-    ("bul", "SIP routing cut telephony cost ~98% ($0.22->$0.004/min)"),
+    ("bul", "450K+ daily calls · latency 3.5s→1.2s · SIP cost -98% ($0.22→$0.004/min)"),
     ("gap",),
     ("sec", "AST Consulting -- SWE"),
-    ("bul", "Ranking engine for Hindi news @ 21M MAU, sub-100ms p99"),
-    ("bul", "SSO (OIDC/JWKS) across Web, Next.js, React Native"),
-    ("bul", "Razorpay subscriptions, -80% latency via caching"),
+    ("bul", "Ranking engine, 21M MAU, sub-100ms p99 · SSO (OIDC/JWKS) · Razorpay"),
     ("gap",),
     ("sec", "Stack"),
     ("kv", "Languages", "JS/TS, Python, Java, C/C++, Go"),
@@ -106,7 +105,7 @@ for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
 parts.append(f'<text x="{W/2}" y="{TITLEBAR_H/2 + 4}" fill="{MUTED}" font-size="12" '
              f'text-anchor="middle">{esc(HOST)}@github: ~$ neofetch</text>')
 
-y = TITLEBAR_H + 30
+y = TITLEBAR_H + 26
 for i, row in enumerate(ROWS):
     kind = row[0]
     if kind == "gap":
@@ -114,26 +113,26 @@ for i, row in enumerate(ROWS):
         continue
     if kind == "host":
         host = esc(HOST)
-        rule_x = KEY_X + (len(HOST) + 7) * 8 + 8
-        inner = (f'<text x="{KEY_X}" y="{y:.1f}" font-size="14" font-weight="700">'
+        rule_x = KEY_X + (len(HOST) + 7) * 6.3 + 8
+        inner = (f'<text x="{KEY_X}" y="{y:.1f}" font-size="{FONT_HOST}" font-weight="700">'
                  f'<tspan fill="{GREEN}">{host}</tspan><tspan fill="{MUTED}">@</tspan>'
                  f'<tspan fill="{ACCENT}">github</tspan></text>'
                  f'<line x1="{rule_x}" y1="{y-4:.1f}" x2="{W-PAD}" y2="{y-4:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "sec":
         title = esc(row[1])
-        inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{SECTION}" font-size="12.5" font-weight="700">'
+        inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{SECTION}" font-size="{FONT_SEC}" font-weight="700">'
                  f'&#8212; {title}</text>'
-                 f'<line x1="{KEY_X + 12 + len(row[1])*8}" y1="{y-4:.1f}" x2="{W-PAD}" y2="{y-4:.1f}" '
+                 f'<line x1="{KEY_X + 10 + len(row[1])*6.1}" y1="{y-4:.1f}" x2="{W-PAD}" y2="{y-4:.1f}" '
                  f'stroke="{FRAME}" stroke-opacity="0.8"/>')
     elif kind == "kv":
         key, val = esc(row[1]), esc(row[2])
-        inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{KEY}" font-size="12.5" font-weight="700">{key}</text>'
-                 f'<text x="{VAL_X}" y="{y:.1f}" fill="{INK}" font-size="12.5">{val}</text>')
+        inner = (f'<text x="{KEY_X}" y="{y:.1f}" fill="{KEY}" font-size="{FONT_KV}" font-weight="700">{key}</text>'
+                 f'<text x="{VAL_X}" y="{y:.1f}" fill="{INK}" font-size="{FONT_KV}">{val}</text>')
     elif kind == "bul":
         txt = esc(row[1])
-        inner = (f'<circle cx="{KEY_X+3}" cy="{y-4:.1f}" r="2.5" fill="{GREEN}"/>'
-                 f'<text x="{KEY_X+14}" y="{y:.1f}" fill="{INK}" font-size="12.5">{txt}</text>')
+        inner = (f'<circle cx="{KEY_X+3}" cy="{y-4:.1f}" r="2.2" fill="{GREEN}"/>'
+                 f'<text x="{KEY_X+11}" y="{y:.1f}" fill="{INK}" font-size="{FONT_BUL}">{txt}</text>')
     else:
         continue
     parts.append(rise(inner, i))
